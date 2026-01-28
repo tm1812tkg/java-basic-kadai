@@ -18,4 +18,18 @@ public class Dictionary_Chapter21 {
 		fruit.put("muscat", "マスカット");
 		fruit.put("cherry", "さくらんぼ");
 	}
+
+    
+    public void searchWords(String[] words) {
+        for (String word : words) {
+            String result = fruit.get(word);
+
+            if (result != null) {
+                System.out.println(word + "の意味は" + result);
+            } else {
+                System.out.println(word + "は辞書に存在しません");
+            }
+        }
+    }
+
 }
